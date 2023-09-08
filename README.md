@@ -163,7 +163,7 @@ Escanear QRCODE
 
 <details>
   
-### NOMES CHATWOOT TERMOS E POLITICA DE PRIVACIDADE
+<summary>NOMES CHATWOOT TERMOS E POLITICA DE PRIVACIDADE</summary>
 
 Acesse super Admin
 
