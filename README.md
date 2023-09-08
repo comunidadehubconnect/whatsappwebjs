@@ -87,15 +87,25 @@ API
 Nombre de canal
 URL do Webhook: https://dominio.com/chatwootMessage
 
+```bash
 npm update -g pm2@latest
+```
 
+```bash
 cd /home
+```
 
+```bash
 git clone https://github.com/nestordavalos/whatsapp-web-chatwoot1
+```
 
+```bash
 cp .env.example .env
+```
 
-nano .env realizar cambios de sus credenciales
+```bash
+nano .env
+```
 
 PORT                                          = 8080
 CHATWOOT_API_URL                              = "https://app.chatwoot.com/api/v1"
@@ -108,18 +118,30 @@ PREFIX_AGENT_NAME_ON_MESSAGES                 = true
 #SLACK_TOKEN                                  = "YOUR_SLACK TOKEN"
 #SLACK_CHANNEL_ID                             = "YOUR_SLACK_CHANNEL_ID"
 
-
-
+```bash
 npm install
+```
 
+```bash
 sudo apt-get install -y libgbm-dev wget unzip fontconfig locales gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils
 
+```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+```
 
+```bash
 sudo apt install ./google-chrome-stable_current_amd64.deb
+```
 
+```bash
+sudo apt install nginx
+```
+
+```bash
 nano /etc/nginx/sites-available/whatsapp-web-v2
+```
 
+```bash
 server {
 
   server_name api.dominio.com;
@@ -149,13 +171,32 @@ server {
    proxy_read_timeout 36000s;
    proxy_redirect off;
   }
-}  
+}
+```
 
-  ln -s /etc/nginx/sites-available/webapi /etc/nginx/sites-enabled
+```bash
+ln -s /etc/nginx/sites-available/webapi /etc/nginx/sites-enabled
+```
 
-  certbot --nginx
+```bash
+sudo apt-get install snapd
+```
 
-  npm start
+```bash
+sudo snap install notes
+```
+
+```bash
+sudo snap install --classic certbot
+```
+
+```bash
+certbot --nginx
+```
+
+```bash
+npm start
+```
 
 Escanear QRCODE 
 
