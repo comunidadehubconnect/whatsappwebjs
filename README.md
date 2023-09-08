@@ -200,11 +200,9 @@ npm start
 
 Escanear QRCODE 
 
-</details>
 
-<details>
   
-<summary>NOMES CHATWOOT TERMOS E POLITICA DE PRIVACIDADE</summary>
+NOMES CHATWOOT TERMOS E POLITICA DE PRIVACIDADE
 
 Acesse super Admin
 
